@@ -35,6 +35,7 @@ li {
 }
 
 
+                    /* Desktop */
 
 /* Main */
 
@@ -63,7 +64,7 @@ main {
     display: inline-block;
     padding: 10px 40px;
     border-radius: 30px;
-    margin-right: 15px;
+    margin-right: 30px;
     color: white;
     border: 2px solid white;
 }
@@ -229,4 +230,103 @@ footer {
     background-color: #282828;
     position: relative;
     z-index: 1;
+    color: white;
+    justify-content: space-between;
+}
+
+.player-left {
+    margin-left: 20px;
+    width: 280px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player-left img {
+    width: 50px;
+}
+
+.player-left span {
+    color: #7B7E82;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.player-center {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.player-right {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+
+.player-buttons {
+    justify-content: center;
+    align-items: center;
+}
+
+.player-buttons i {
+    display: inline-block;
+    margin: 10px 15px;
+    color: white;
+}
+
+.play-icon {
+    font-size: 2rem;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 6px 6px 6px 9px;
+}
+
+.player-bar {
+    width: 500px;
+    height: 5px;
+    background-color: #5A5A5A;
+    border-radius: 30px;
+    position: relative;
+}
+
+
+.song-played {
+    width: 100px;
+    height: 5px;
+    background-color: #C1C1C1;
+    border-radius: 30px;
+}
+
+.player-bar::before {
+    content: '0.25';
+    position: absolute;
+    top: -5px;
+    left: -50px;
+    font-weight: bold;
+    font-size: .8rem;
+
+}
+
+.player-bar::after {
+    content: '4.35';
+    position: absolute;
+    top: -5px;
+    right: -50px;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.volume-bar {
+    width: 150px;
+    height: 5px;
+    background-color: #5A5A5A;
+    border-radius: 30px;
+    position: relative;
+}
+
+.volume {
+    width: 100px;
+    height: 5px;
+    background-color: #C1C1C1;
+    border-radius: 30px;
 }
