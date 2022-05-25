@@ -44,15 +44,10 @@ main {
     width: 100%;
 }
 
-section {
-    height: 100%;
-    width: calc(100% - 250px);
-    overflow-y: scroll;
-    color: white;
-    position: relative;
-}
 
-#topbar {
+/* Topbar */
+
+.topbar {
     width: calc(100% - 250px);
     height: 100px;
     background-color: rgba(0, 0, 0, .5);
@@ -60,8 +55,18 @@ section {
     top: 0;
     right: 0;
     z-index: 1;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
+.topbar a {
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 30px;
+    margin-right: 15px;
+    color: white;
+    border: 2px solid white;
+}
 
 /* Sidebar */
 
@@ -106,20 +111,24 @@ header {
     line-height: 2rem;
 }
 
-.add-playlist i {
+.add-playlist span {
     background-color: #A3A3A3;
+    display: inline-block;
     color: black;
-    padding: 12px;
+    padding: 0 10px;
     margin-right: 10px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    vertical-align: middle;
 }
 
 
 /* Navbar */
 
 nav {
-    height: calc(100% - 300px - 80px);
+    height: calc(100% - 300px - 70px);
     min-height: 130px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 aside nav a {
@@ -130,7 +139,7 @@ aside nav a {
 /* Account */
 
 .account {
-    height: 80px;
+    height: 70px;
 }
 
 .download {
@@ -150,7 +159,8 @@ aside nav a {
 
 .username {
     margin-left: 10px;
-    font-weight: bolder;
+    font-weight: bold;
+    color: white;
 }
 
 .user-logo {
@@ -160,6 +170,57 @@ aside nav a {
     border-radius: 50%;
 }
 
+
+/* Mainbody */
+
+.mainbody {
+    padding: 100px 0 20px 20px;
+    height: 100%;
+    width: calc(100% - 250px);
+    overflow-y: scroll;
+    color: white;
+}
+
+.filters {
+    justify-content: center;
+}
+
+.filters li {
+    text-transform: uppercase;
+    padding: 20px;
+    color: #4A4D54;
+}
+
+.title {
+    margin: 50px 0;
+}
+
+.title span {
+    color: #7B7E82;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.recent {
+    justify-content: space-between;
+}
+
+.card {
+    text-align: center;
+    line-height: 2rem;
+    padding-right: 20px;
+    width: calc(100% / 6);
+}
+
+.card span {
+    color: #7B7E82;
+    font-weight: bold;
+}
+
+.popular img {
+    border-radius: 50%;
+}
 
 /* Footer */
 
